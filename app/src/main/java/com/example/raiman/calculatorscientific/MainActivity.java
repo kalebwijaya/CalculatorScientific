@@ -307,6 +307,25 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btnSqr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                try{
+                    Answer=Math.sqrt(Math.toDegrees(Double.parseDouble(txtAnswer.getText().toString())));
+                    Val2=0.0; Val1=0.0;
+                    txtAnswer.setText(Answer.toString());solvedWithouEqu=true;
+
+                }
+                catch (Exception ex) {txtAnswer.setText("0");}
+                finally {
+
+                }
+
+            }
+        });
+
         btnTan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
