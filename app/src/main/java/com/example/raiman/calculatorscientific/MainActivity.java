@@ -313,7 +313,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 try{
-                    Answer=Math.sqrt(Math.toDegrees(Double.parseDouble(txtAnswer.getText().toString())));
+                    Answer=Math.sqrt(Double.parseDouble(txtAnswer.getText().toString()));
                     Val2=0.0; Val1=0.0;
                     txtAnswer.setText(Answer.toString());solvedWithouEqu=true;
 
